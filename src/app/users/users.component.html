@@ -1,15 +1,19 @@
-<h4><small>( ͡° ͜ʖ ͡°)This is a search website linked to a Git-hub i that lets you search for any and all git hub
-    users.( ͡° ͜ʖ ͡°)</small></h4>
-<h4><small>( ͡° ͜ʖ ͡°) Just type in a name and see what happens ( ͡° ͜ʖ ͡°)</small></h4>
+<h4><small><strong> ͡° ͜ʖ ͡°)This is a search website linked to a Git-hub i that lets you search for any and all git hub
+    users.( ͡° ͜ʖ ͡°)</strong></small></h4>
+<h4 style="color:black"><small><strong>( ͡° ͜ʖ ͡°) Just type in a name and see what happens ( ͡° ͜ʖ ͡°)</strong></small></h4>
 <hr>
 <div class="container">
-  <div class="input panel-heading">
-    <label for="Name"></label>
-    <input class="form-control" type="text" name="Name" id="name" placeholder="Enter Name" [(ngModel)]="username" name="name" #name="ngModel" (keyup)="userName()">
-    <button (click)="userName()" class="button btn-success" name="search">Search</button>
-  </div>
-
-  <!-- <p class="log"> {{user.login}}</p> -->
+  <section class="on">
+    <form #inputForm='ngForm' >
+    <div class="input panel-heading">
+      <label for="Name"></label>
+      <input class="form-control" type="text" name="Name" id="name" placeholder="Enter Name" [(ngModel)]="username"
+        name="name" #name="ngModel" (keyup)="userName()">
+      <button (click)="userName()" class="button btn-success" name="search" [disabled]="!inputForm.form.valid">Search</button>
+    </div>
+  </form>
+  </section>
+  <p class="log"> {{user.login}}</p>
 
   <div class="panel-heading"></div>
 
@@ -23,9 +27,8 @@
 
         <ul>
           <li>{{user.followers}} Followers</li>
-          <li>{{user.following}} Followers</li>
-          <li>{{user.public_repo}} Followers</li>
-
+          <li>{{user.following}} People Following</li>
+          <li>{{user.public_repos}} number of repos</li>
         </ul>
         <div class=" container-flex card talk">
           <h1 class="">public Repositories</h1>
