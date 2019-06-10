@@ -20,10 +20,12 @@ export class UsersComponent implements OnInit {
   userName() {
     this.usersService.updateUsers(this.username);
     this.usersService.getuserInfo().subscribe(user => {
+      console.log(user)
       this.user = user;
     });
 
     this.usersService.getuserRepos().subscribe(repos => {
+      console.log(repos)
       this.repos = repos;
     });
   }

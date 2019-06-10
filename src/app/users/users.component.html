@@ -13,7 +13,7 @@
     </div>
   </form>
   </section>
-  <p class="log"> {{user.login}}</p>
+  <!-- <p class="log"> {{user.login}}</p> -->
 
   <div class="panel-heading"></div>
 
@@ -36,7 +36,8 @@
           <div *ngFor="let repo of repos">
             <hr>
             <ul>
-              <li><a href="{{repo.html_url}}">{{repo.name}}</a></li>
+              <li><strong><a href="{{repo.html_url}}">{{repo.name}}</a></strong></li>
+              <p><small>^Click me to see my contents^</small></p>
             </ul>
           </div>
         </div>
@@ -44,15 +45,3 @@
     </div>
   </div>
 </div>
-
-
-<!-- 
-
-<div>
-
- 
-  <div>
-    {{user.login}}  
-    <img src="{{user.avatar_url}}" alt="">
-  </div>
-</div> -->
