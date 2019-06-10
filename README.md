@@ -1,6 +1,18 @@
-# Search
+# Git-Search
+This website was made using angular and its main objective is to search for the different git hub users and display what is on their repositories.
+## installation
+First of you need to install angular on your machine and one way you can do this is by using this website https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/
+after you can clone the repository from the main git hub repo and you 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+## application needed 
+ - node js.
+ - npm.
+ - Text editor of your choosing.
+
+ ##Languages used 
+ - Angular 
+ - Html 
+ - Css 
 
 ## Development server
 
@@ -24,4 +36,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For further info on the above or if any problems arrise contact me on--
+akamau41@gmail.com
