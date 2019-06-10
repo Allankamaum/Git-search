@@ -5,7 +5,7 @@ h4{
   align-self: right;
 }
 li{
-  text-align: left;
+  list-style: none;
 }
 .row{
   display: flex;
