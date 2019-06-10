@@ -1,4 +1,4 @@
-<h4><small>( ͡° ͜ʖ ͡°)This is a search website linked to a Git-hub API that lets you search for any and all git hub
+<h4><small>( ͡° ͜ʖ ͡°)This is a search website linked to a Git-hub i that lets you search for any and all git hub
     users.( ͡° ͜ʖ ͡°)</small></h4>
 <h4><small>( ͡° ͜ʖ ͡°) Just type in a name and see what happens ( ͡° ͜ʖ ͡°)</small></h4>
 <hr>
@@ -13,7 +13,33 @@
 
   <div class="panel-heading"></div>
 
-  
+  <div *ngIf="user">
+    <div class="panel panel-default">
+
+
+      <img class="image" src="{{user.avatar_url}}" alt="">
+      <div class="card">
+
+
+        <ul>
+          <li>{{user.followers}} Followers</li>
+          <li>{{user.following}} Followers</li>
+          <li>{{user.public_repo}} Followers</li>
+
+        </ul>
+        <div class=" container-flex card talk">
+          <h1 class="">public Repositories</h1>
+
+          <div *ngFor="let repo of repos">
+            <hr>
+            <ul>
+              <li><a href="{{repo.html_url}}">{{repo.name}}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
