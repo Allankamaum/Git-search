@@ -1,5 +1,6 @@
 h4{
   text-align: center;
+  color:gold;
 }
 .card{
   align-self: right;
@@ -13,7 +14,7 @@ li{
   display: inline-flex;
 }
 .log{
-  margin-left:20px;
+  margin-left:2px;
 }
 .talk{
   align-self: right;
@@ -22,3 +23,14 @@ li{
 .ul1{
   list-style: none;
 }
+/* .section{
+  background-image: url(https://cdn-images-1.medium.com/max/2400/1*Lnu3_GAUoScFCqT87VRQGQ.jpeg)
+}
+*/
+
+.button{
+  margin-top: 4px; 
+  padding: 15px;
+  border-radius: 8px;
+  border: none; 
+} 
