@@ -18,4 +18,7 @@ export class DataService {
     this.username = '';
   }
 
+  getuserInfo(){return this.http.get("https://api.github.com/users/" + this.username + "?client_id" +this.clientid + "&clientsecret=" + this.clientsecret);
+
+
 }
