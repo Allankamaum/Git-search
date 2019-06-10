@@ -1,0 +1,24 @@
+h4{
+  text-align: center;
+}
+.card{
+  align-self: right;
+}
+li{
+  text-align: left;
+}
+.row{
+  display: flex;
+  text-align: center;
+  display: inline-flex;
+}
+.log{
+  margin-left:20px;
+}
+.talk{
+  align-self: right;
+  margin-left:250px; 
+}
+.ul1{
+  list-style: none;
+}
