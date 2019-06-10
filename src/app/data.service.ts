@@ -20,5 +20,12 @@ export class DataService {
 
   getuserInfo(){return this.http.get("https://api.github.com/users/" + this.username + "?client_id" +this.clientid + "&clientsecret=" + this.clientsecret);
 
+  }
+  getuserRepos(){return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id" +this.clientid + "&clientsecret=" + this.clientsecret);
+
+  }
+  updateUsers(username:string){
+    this.username = username;
+  }
 
 }
